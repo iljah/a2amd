@@ -1,0 +1,27 @@
+[package]
+name = "a2amd"
+version = "0.1.0"
+description = "All-to-all messaging daemon"
+license = "MIT"
+default-run = "a2amd"
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2.11", features = ["macros", "net", "stream"] }
+tokio-util = { version = "0.2.0", features = ["codec"] }
+futures = "0.3.0"
+chrono = "0.4"
+sha2 = "0.8.1"
+rand = "0.7.3"
+hex = "0.3.1"
+libmath = "0.2.1"
+log = "0.4"
+simple-logging = "2.0.2"
+
+[[bin]]
+name = "a2amd"
+path = "a2amd.rs"
+
+[[bin]]
+name = "create_message"
+path = "create_message.rs"
