@@ -78,8 +78,8 @@ async*/ fn main() {
 					None => panic!()
 				}
 			});*/
-			break
 			println!("set {} {} {}", &nonce, &timestamp, &message);
+			break
 		}
 	}
 }
